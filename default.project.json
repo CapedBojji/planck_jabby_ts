@@ -1,0 +1,22 @@
+{
+  "name": "PlanckJabby",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "DevPackages": {
+        "$path": "DevPackages"
+      },
+      "Packages": {
+        "$path": "Packages"
+      },
+      "Project": {
+        "$path": "src"
+      }
+    },
+    "ServerScriptService": {
+      "run-tests": {
+        "$path": "scripts/run-tests.server.luau"
+      }
+    }
+  }
+}
