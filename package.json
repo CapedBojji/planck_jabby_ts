@@ -1,5 +1,5 @@
 {
-  "name": "@rbxts/planck_jabby",
+  "name": "@rbxts/planck-jabby",
   "version": "0.1.0-rc.1",
   "description": "A Plugin for Planck, adding support for the Jabby debugger.",
   "main": "out/init.luau",
@@ -19,8 +19,8 @@
     "url": "https://github.com/yetanotherclown/planck"
   },
   "scripts": {
-    "build": "rbxtsc --rojo ts.project.json",
-    "watch": "rbxtsc --rojo ts.project.json -w",
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
     "prepublishOnly": "pnpm run build"
   },
   "homepage": "https://yetanotherclown.github.io/planck/docs/plugins/jabby",

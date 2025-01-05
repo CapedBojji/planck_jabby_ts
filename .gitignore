@@ -17,7 +17,8 @@ results/
 node_modules/
 lune_packages/
 **.*.tgz
-build/.devenv
+build/
+.devenv
 .devenv
 results/
 **.*.tgz
