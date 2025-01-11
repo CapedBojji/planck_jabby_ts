@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/planck-jabby",
-  "version": "0.1.0-rc.4",
+  "version": "0.1.0-rc.5",
   "description": "A Plugin for Planck, adding support for the Jabby debugger.",
   "main": "out/init.luau",
   "types": "out/index.d.ts",
