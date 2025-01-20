@@ -90,8 +90,13 @@ function Plugin:build(scheduler: any)
 		end
 	end)
 
-	table.insert(Jabby.public, jabbyScheduler)
-	Jabby.public.updated = true
+	Jabby.register({
+		name = name,
+		applet = Jabby.applets.scheduler,
+		configuration = {
+			scheduler = jabbyScheduler,
+		},
+	})
 end
 
 function Plugin.new()
