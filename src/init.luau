@@ -51,7 +51,7 @@ function Plugin:build(scheduler: any)
 		function(info: SystemsAddRemove)
 			local id = jabbyScheduler:register_system({
 				name = info.system.name,
-				phase = info.system.phase,
+				phase = tostring(info.system.phase),
 			})
 
 			systemToId[info.system.system] = id
@@ -90,8 +90,13 @@ function Plugin:build(scheduler: any)
 		end
 	end)
 
-	table.insert(Jabby.public, jabbyScheduler)
-	Jabby.public.updated = true
+	Jabby.register({
+		name = name,
+		applet = Jabby.applets.scheduler,
+		configuration = {
+			scheduler = jabbyScheduler,
+		},
+	})
 end
 
 function Plugin.new()
