@@ -1,8 +1,8 @@
-import Scheduler from "@rbxts/planck/out/Scheduler";
-import { Plugin } from "@rbxts/planck/out/types";
+import { Plugin } from "@rbxts/planck/out/types"
+import  Scheduler  from "@rbxts/planck/out/Scheduler"
 
 declare class PlankJabbyPlugin implements Plugin {
-    build<T extends unknown[]>(schedular: Scheduler<T>): void
+    build(schedular: Scheduler<unknown[]>): void
 }
 
 export = PlankJabbyPlugin;
